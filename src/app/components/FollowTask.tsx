@@ -15,9 +15,9 @@ export default function FollowTask({ channelUsername }: FollowTaskProps) {
   const [webApp, setWebApp] = useState<any>(null);
 
   useEffect(() => {
-    // @ts-ignore
+    // @ts-expect-error
     if (window.Telegram?.WebApp) {
-      // @ts-ignore
+      // @ts-expect-error
       setWebApp(window.Telegram.WebApp);
     }
   }, []);

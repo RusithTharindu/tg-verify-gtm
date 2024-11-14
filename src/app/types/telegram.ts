@@ -5,8 +5,8 @@ interface WebAppUser {
     username?: string;
   }
   
-  interface WebAppInitData {
-    user?: WebAppUser;
-    auth_date: number;
-    hash: string;
-  }
+  // interface WebAppInitData {
+  //   user?: WebAppUser;
+  //   auth_date: number;
+  //   hash: string;
+  // }

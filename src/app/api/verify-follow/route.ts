@@ -14,5 +14,6 @@ export async function POST(request: Request) {
       { success: false, error: 'Failed to verify membership' },
       { status: 500 }
     );
+    console.log('Error verifying membership:', error);
   }
 }
